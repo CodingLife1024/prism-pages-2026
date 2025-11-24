@@ -1,0 +1,58 @@
+.dashboard {
+    background-color: #941338;
+    width: 80%;
+    padding: 20px;
+    overflow-y: auto;
+    flex: 5;
+}
+
+.topics {
+    font-size: 25px;
+    padding: 5px 0 5px 0;
+    color: white;
+    text-decoration: underline;
+    white-space: normal; /* This property allows text to wrap */
+}
+
+.topics a {
+    color: white; /* Set the color for hyperlinks */
+    text-decoration: underline; /* Optional: Remove underline for hyperlinks */
+    white-space: normal; /* This property allows text to wrap */
+}
+
+/* Additional styles for visited and hover states */
+.topics a:visited {
+    color: white;
+}
+
+.topics a:hover {
+    color: aqua; /* Set the color for hover state */
+}
+
+@media only screen and (max-width: 1000px) {
+    .dashboard {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+        padding: 10px 30px 10px 30px;
+    }
+
+    .topics {
+        font-size: 17px;
+        padding: 5px 0 5px 0;
+        color: white;
+        text-decoration: underline;
+        white-space: normal;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .dashboard {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+        padding: 10px;
+    }
+}

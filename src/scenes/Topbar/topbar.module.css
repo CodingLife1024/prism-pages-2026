@@ -1,0 +1,75 @@
+.topbar {
+    padding: 10px 50px 10px 50px;
+    background-color: #031716;
+    height: fit-content;
+    color: #DBF8FA;
+    width: 100%;
+    /* position: fixed; */
+}
+
+.name, .intro, .interests {
+    font-size: 50px;
+    width: 80%;
+}
+
+.intro, .interests {
+    font-size: 20px;
+}
+
+.socials {
+    display: flex; /* Use flexbox to align the icons horizontally */
+}
+
+.social > * {
+    margin: 5px; /* Adjust the margin as needed for the desired gap between icons */
+}
+
+.interests a {
+    color: inherit; /* Inherit the color from the parent element (regular text color) */
+    text-decoration: underline; /* Add underline to the hyperlinked text */
+}
+
+@media only screen and (max-width: 1000px) {
+    .topbar {
+        padding: 10px 30px 10px 30px;
+        background-color: #031716;
+        height: fit-content;
+        color: #DBF8FA;
+        width: fit-content;
+        /* position: fixed; */
+    }
+
+    .name, .intro, .interests {
+        font-size: 40px;
+        width: 100%;
+    }
+
+    .intro, .interests {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .topbar {
+        padding: 10px;
+        background-color: #031716;
+        height: fit-content;
+        color: #DBF8FA;
+        width: fit-content;
+        /* position: fixed; */
+    }
+
+    .name, .intro, .interests {
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .name, .intro, .interests {
+        font-size: 25px;
+        width: 100%;
+    }
+
+    .intro, .interests {
+        font-size: 15px;
+    }
+}
