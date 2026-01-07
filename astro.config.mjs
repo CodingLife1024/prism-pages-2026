@@ -8,8 +8,8 @@ import rehypeKatex from "rehype-katex";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://codinglife1024.github.io",
-  	base: "/prism-pages-2026",
+	site: 'https://example.com',
+	integrations: [mdx(), sitemap()],
 	markdown: {
 		remarkPlugins: [remarkMath],
 		rehypePlugins: [rehypeKatex],
