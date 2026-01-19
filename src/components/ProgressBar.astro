@@ -1,0 +1,25 @@
+---
+const { value } = Astro.props
+---
+<div class="progress">
+  <div class="fill" style={`width: ${value}%`} />
+  <span>{value}%</span>
+</div>
+
+<style>
+.progress {
+  height: 0.75rem;
+  background: #e5e7eb;
+  border-radius: 999px;
+  position: relative;
+}
+.fill {
+  height: 100%;
+  background: #22c55e;
+  border-radius: 999px;
+}
+span {
+  font-size: 0.75rem;
+  margin-left: 0.5rem;
+}
+</style>
