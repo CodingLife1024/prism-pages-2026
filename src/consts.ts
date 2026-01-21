@@ -24,11 +24,15 @@ export const NAV_LINKS: SocialLink[] = [
     href: '/about',
     label: 'about',
   },
+  {
+    href: '/books',
+    label: 'books',
+  },
 ]
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
-    href: 'https://github.com/jktrn',
+    href: 'https://github.com/CodingLife1024',
     label: 'GitHub',
   },
   {
